@@ -1,0 +1,38 @@
+% Document class %
+\documentclass[12pt,letterpaper]{article}
+
+
+% Packages %
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+
+
+% Sections %
+% \arabic, \Roman, \roman, \Alph, \alph %
+\renewcommand{\thesection}{\Roman{section}}
+\renewcommand{\thesubsection}{\thesection.\alph{subsection}}
+
+
+% Hyperlinks %
+\hypersetup{colorlinks=true,linkcolor=blue,filecolor=magenta,urlcolor=cyan}
+
+
+% Document %
+\begin{document}
+  \pagenumbering{gobble}
+
+
+  % Title %
+  \begin{center}
+    {\LARGE{
+      Title
+    }}
+    
+    \bigskip
+    
+    \textit{\today}
+  \end{center}
+
+  
+  % Body %
+\end{document}
