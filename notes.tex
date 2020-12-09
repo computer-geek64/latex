@@ -3,14 +3,11 @@
 
 
 % Packages %
-\usepackage[margin=1in]{geometry}
-\usepackage{setspace}
-\usepackage{enumitem}
-%\usepackage{hyperref}
-%\usepackage{amsmath}
-%\usepackage{amssymb}
-%\usepackage{mathtools}
-%\usepackage{graphicx}
+\usepackage[margin=1in]{geometry, setspace, enumitem}
+\usepackage{fancyhdr}
+%\usepackage{hyperref}  % For hyperlinks
+%\usepackage{amsmath, amssymb}  % For math equations and symbols
+%\usepackage{graphicx}  % For images
 
 
 % Page numbering %
@@ -38,6 +35,14 @@
 % Line spacing %
 \setstretch{1.15}
 \setlist{nosep}
+
+
+% Heading %
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{TITLE}
+\rhead{Ashish D'Souza}
+%\thispagestyle{empty}  % For no heading on first page
 
 
 % Document %
