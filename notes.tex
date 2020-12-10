@@ -2,6 +2,12 @@
 \documentclass[12pt,letterpaper]{article}
 
 
+% Variables %
+\title{Title}
+\date{\today}
+\author{Ashish D'Souza}
+
+
 % Packages %
 \usepackage[margin=1in]{geometry}
 \usepackage{setspace, enumitem}
@@ -41,8 +47,9 @@
 % Heading %
 \pagestyle{fancy}
 \fancyhf{}
-\lhead{TITLE}
-\rhead{Ashish D'Souza}
+\makeatletter
+\lhead{\@title}
+\rhead{\@author}
 %\thispagestyle{empty}  % For no heading on first page
 
 
@@ -51,12 +58,13 @@
   % Title %
   \begin{center}
     {\LARGE{
-      Title
+      \@title
     }}
 
     \bigskip
 
-    \textit{\today}
+    \textit{\@date}
+    \makeatother
   \end{center}
 
 
