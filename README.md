@@ -1,2 +1,3 @@
-# latex-templates
-LaTeX Templates
+# LaTeX
+
+LaTeX templates and development environment
